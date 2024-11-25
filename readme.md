@@ -1,5 +1,6 @@
 # Problema do Caixeiro Viajante (Versão com Estratégia Gulosa e Backtracking)
 Este projeto implementa uma solução para uma variação do problema clássico do Caixeiro Viajante. O problema consiste em encontrar um ciclo hamiltoniano em um grafo, onde o caixeiro deve visitar todas as cidades exatamente uma vez e retornar à cidade de origem, com o menor custo possível.
+![exemplo de grafo](image.png)
 
 ## Descrição do Projeto
 Este programa aplica uma abordagem gulosa inicial, seguida de uma solução por tentativa e erro (backtracking), para resolver o problema do Caixeiro Viajante. A solução utiliza um grafo para representar o mapa de cidades e estradas, onde:
@@ -63,7 +64,6 @@ O arquivo testador.c contém exemplos de execução com grafos aleatórios e com
 ## Função de Teste:
 - **Teste 1**: Grafo aleatório com pesos variáveis.
 - **Teste 2**: Grafo com peso fixo e possibilidade de ciclos.
-![exemplo de grafo](image.png)
 
 ## Considerações Finais
 Este projeto implementa uma solução eficaz para o problema do Caixeiro Viajante utilizando uma combinação de abordagens gulosa e backtracking. Embora a abordagem gulosa possa não ser a solução ótima, ela serve como uma boa heurística inicial para reduzir o número de tentativas do algoritmo de backtracking.

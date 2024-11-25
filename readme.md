@@ -1,7 +1,7 @@
 # Problema do Caixeiro Viajante (Versão com Estratégia Gulosa e Backtracking)
 Este projeto implementa uma solução para uma variação do problema clássico do Caixeiro Viajante. O problema consiste em encontrar um ciclo hamiltoniano em um grafo, onde o caixeiro deve visitar todas as cidades exatamente uma vez e retornar à cidade de origem, com o menor custo possível.
 
-## Exemplo de uma situação problema:
+**Exemplo de uma situação problema:**
 ![exemplo de grafo](image.png)
 
 ## Descrição do Projeto

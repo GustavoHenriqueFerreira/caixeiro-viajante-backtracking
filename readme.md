@@ -4,8 +4,8 @@ Este projeto implementa uma solução para uma variação do problema clássico 
 ## Descrição do Projeto
 Este programa aplica uma abordagem gulosa inicial, seguida de uma solução por tentativa e erro (backtracking), para resolver o problema do Caixeiro Viajante. A solução utiliza um grafo para representar o mapa de cidades e estradas, onde:
 
-- Vértices representam as cidades.
-- Arestas representam as estradas entre as cidades.
+- **Vértices** representam as cidades.
+- **Arestas** representam as estradas entre as cidades.
 O ciclo hamiltoniano, que é o caminho que o caixeiro deve seguir, é determinado ao tentar visitar todas as cidades de forma eficiente, minimizando o custo total da rota.
 
 ## Estrutura do Código
@@ -18,13 +18,13 @@ O programa é modularizado em diferentes arquivos, cada um com uma função espe
 - testador.c: Programa de teste que inicia a execução do algoritmo e verifica se a solução proposta encontra o ciclo hamiltoniano.
 
 ### Algoritmo:
-1. Estratégia Gulosa Inicial: O algoritmo começa selecionando um conjunto vazio de arestas e tenta adicionar as arestas, uma de cada vez, de acordo com a ordem das arestas fornecida. A cada adição, o algoritmo verifica se o caminho já é uma solução válida. Caso contrário, ele tenta outras arestas.
+1. **Estratégia Gulosa Inicial**: O algoritmo começa selecionando um conjunto vazio de arestas e tenta adicionar as arestas, uma de cada vez, de acordo com a ordem das arestas fornecida. A cada adição, o algoritmo verifica se o caminho já é uma solução válida. Caso contrário, ele tenta outras arestas.
 
-2. Backtracking: Quando o algoritmo guloso não encontra a solução ideal, é aplicado o backtracking para tentar todas as possibilidades e encontrar a rota com o menor custo. O backtracking explora todas as arestas possíveis e remove as opções quando uma solução não é válida.
+2. **Backtracking**: Quando o algoritmo guloso não encontra a solução ideal, é aplicado o backtracking para tentar todas as possibilidades e encontrar a rota com o menor custo. O backtracking explora todas as arestas possíveis e remove as opções quando uma solução não é válida.
 
-3. Verificação de Solução: A solução é válida quando todos os vértices possuem grau 2, indicando que o caixeiro visitou todas as cidades exatamente uma vez e retornou à cidade inicial.
+3. **Verificação de Solução**: A solução é válida quando todos os vértices possuem grau 2, indicando que o caixeiro visitou todas as cidades exatamente uma vez e retornou à cidade inicial.
 
-4. Cálculo do Custo: O custo de cada aresta é armazenado, e o menor custo encontrado é reportado ao final da execução.
+4. **Cálculo do Custo**: O custo de cada aresta é armazenado, e o menor custo encontrado é reportado ao final da execução.
 
 ### Funções Principais:
 - ehSolucao: Verifica se o caminho atual é um ciclo hamiltoniano válido.
@@ -36,8 +36,8 @@ O programa é modularizado em diferentes arquivos, cada um com uma função espe
 
 ## Execução
 ### Requisitos:
-- Compilador C: O programa é escrito em C e pode ser compilado com qualquer compilador C padrão.
-- Bibliotecas: O código depende de bibliotecas padrão de C para alocação dinâmica de memória, impressão e controle de fluxo.
+- **Compilador C**: O programa é escrito em C e pode ser compilado com qualquer compilador C padrão.
+- **Bibliotecas**: O código depende de bibliotecas padrão de C para alocação dinâmica de memória, impressão e controle de fluxo.
 
 ### Como Rodar:
 1. Compile o programa:
@@ -61,8 +61,8 @@ Encontrou solução.
 O arquivo testador.c contém exemplos de execução com grafos aleatórios e com pesos variados. O teste verifica se o algoritmo é capaz de encontrar o ciclo hamiltoniano correto em diferentes cenários.
 
 ## Função de Teste:
-- Teste 1: Grafo aleatório com pesos variáveis.
-- Teste 2: Grafo com peso fixo e possibilidade de ciclos.
+- **Teste 1**: Grafo aleatório com pesos variáveis.
+- **Teste 2**: Grafo com peso fixo e possibilidade de ciclos.
 
 ## Considerações Finais
 Este projeto implementa uma solução eficaz para o problema do Caixeiro Viajante utilizando uma combinação de abordagens gulosa e backtracking. Embora a abordagem gulosa possa não ser a solução ótima, ela serve como uma boa heurística inicial para reduzir o número de tentativas do algoritmo de backtracking.

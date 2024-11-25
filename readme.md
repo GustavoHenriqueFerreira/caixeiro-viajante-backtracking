@@ -63,6 +63,7 @@ O arquivo testador.c contém exemplos de execução com grafos aleatórios e com
 ## Função de Teste:
 - **Teste 1**: Grafo aleatório com pesos variáveis.
 - **Teste 2**: Grafo com peso fixo e possibilidade de ciclos.
+![exemplo de grafo](image.png)
 
 ## Considerações Finais
 Este projeto implementa uma solução eficaz para o problema do Caixeiro Viajante utilizando uma combinação de abordagens gulosa e backtracking. Embora a abordagem gulosa possa não ser a solução ótima, ela serve como uma boa heurística inicial para reduzir o número de tentativas do algoritmo de backtracking.
